@@ -40,7 +40,7 @@ This implements the second signing method. Please note that you can run ``SignII
 If you want to use a new ``PARS`` object to run ``SignII`` and ``VerifyII`` apart from ``SignI`` and ``VerifyI``, please include the following codes. 
 
 ```
-int l = pars.getL();
+final int l = pars.getL();
 pars = Setup.setup(n);
 pars = KeyGen.keyGen(pars);
 pars.setL(l);
