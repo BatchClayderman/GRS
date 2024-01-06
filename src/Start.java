@@ -59,10 +59,10 @@ public class Start
 		{
 			System.out.println("/** n = " + n + " **/");
 			System.out.println("The time consumption of Sign I is " + results.get(n)[0] + " ms. ");
-			System.out.println("The size of the signature in Sign I is " + results.get(n)[1] + " Byte. ");
+			//System.out.println("The size of the signature in Sign I is " + results.get(n)[1] + " Byte. ");
 			System.out.println("The time consumption of Verify I is " + results.get(n)[2] + " ms. ");
 			System.out.println("The time consumption of Sign II is " + results.get(n)[3] + " ms. ");
-			System.out.println("The size of the signature in Sign II is " + results.get(n)[4] + " Byte. ");
+			//System.out.println("The size of the signature in Sign II is " + results.get(n)[4] + " Byte. ");
 			System.out.println("The time consumption of Verify II is " + results.get(n)[5] + " ms. ");
 			System.out.println();
 		}
