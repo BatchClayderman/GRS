@@ -1,8 +1,10 @@
 # GRS
 
-This is an implementation of the GRS scheme based on the JPBC library. 
+This is an implementation of the GRS cryptography scheme (``From Σ-protocol based Signatures to Ring Signatures: General Construction and Applications``) based on the JPBC library. 
 
-Please right-click the ``Start.java`` and click ``Run as Java application``. 
+This repository is a part of the [cryptography schemes](https://github.com/BatchClayderman/Cryptography-Schemes). 
+
+Please use the ``Start.java`` to launch the program. For example, please right-click the ``Start.java`` and click ``Run as Java application`` if ``eclipse`` is used. 
 
 The file ``Start.java`` implements the following running order. 
 
