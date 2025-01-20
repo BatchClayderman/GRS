@@ -2,7 +2,11 @@
 
 This is an implementation of the GRS cryptography scheme (``From Σ-protocol based Signatures to Ring Signatures: General Construction and Applications``) based on the JPBC library. 
 
+As variable size computation is not required, this repository is compatible with new and old versions of the Java application programming interfaces. 
+
 This repository is a part of the [cryptography schemes](https://github.com/BatchClayderman/Cryptography-Schemes). 
+
+## Usage
 
 Please use the ``Start.java`` to launch the program. For example, please right-click the ``Start.java`` and click ``Run as Java application`` if ``eclipse`` is used. 
 
@@ -15,27 +19,29 @@ The file ``Start.java`` implements the following running order.
 - SignII
 - VerifyII
 
-## PARS
+## Procedure
+
+### PARS
 
 This contains all parameters in this scheme, which is the fundamental file. 
 
-## Setup
+### Setup
 
 This will set up basic parameters in this scheme. 
 
-## KeyGen
+### KeyGen
 
 This will generate secret keys and corresponding public keys. 
 
-## SignI
+### SignI
 
 This implements the first signing method. 
 
-## VerifyI
+### VerifyI
 
 This implements the first verification method. 
 
-## SignII
+### SignII
 
 This implements the second signing method. Please note that you can run ``SignII`` and ``VerifyII`` immediately after running ``VerifyI``. 
 
