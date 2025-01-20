@@ -1,8 +1,8 @@
 # GRS
 
-This is an implementation of the GRS cryptography scheme (``From Σ-protocol based Signatures to Ring Signatures: General Construction and Applications``) based on the JPBC library. 
+This is the official implementation of the GRS cryptography scheme (``From Σ-protocol based Signatures to Ring Signatures: General Construction and Applications``) based on the JPBC library. 
 
-As variable size computation is not required, this repository is compatible with new and old versions of the Java application programming interfaces. 
+As the computation of variable sizes is not required, this repository is compatible with new and old versions of the Java application programming interfaces. 
 
 This repository is a part of the [cryptography schemes](https://github.com/BatchClayderman/Cryptography-Schemes). 
 
