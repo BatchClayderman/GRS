@@ -54,6 +54,6 @@ pars = KeyGen.keyGen(pars);
 pars.setL(l);
 ```
 
-## VerifyII
+### VerifyII
 
 This implements the second verification method. 
