@@ -3,7 +3,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.TimeZone;
-import static jdk.nashorn.internal.ir.debug.ObjectSizeCalculator.getObjectSize;
+import com.javamex.classmexer.MemoryUtil;
+import com.javamex.classmexer.MemoryUtil.VisibilityFilter;
 
 
 public class Start
@@ -14,6 +15,11 @@ public class Start
 		sdf.setTimeZone(TimeZone.getTimeZone("GMT+8"));
 		Date now = new Date();
 		return sdf.format(now);
+	}
+	
+	public static long getObjectSize(Object object)
+	{
+		return MemoryUtil.deepMemoryUsageOf(object, VisibilityFilter.ALL);
 	}
 	
 	public static void main(String[] args) throws Exception
@@ -59,10 +65,10 @@ public class Start
 		{
 			System.out.println("/** n = " + n + " **/");
 			System.out.println("The time consumption of Sign I is " + results.get(n)[0] + " ms. ");
-			//System.out.println("The size of the signature in Sign I is " + results.get(n)[1] + " Byte. ");
+			System.out.println("The size of the signature in Sign I is " + results.get(n)[1] + " Byte. ");
 			System.out.println("The time consumption of Verify I is " + results.get(n)[2] + " ms. ");
 			System.out.println("The time consumption of Sign II is " + results.get(n)[3] + " ms. ");
-			//System.out.println("The size of the signature in Sign II is " + results.get(n)[4] + " Byte. ");
+			System.out.println("The size of the signature in Sign II is " + results.get(n)[4] + " Byte. ");
 			System.out.println("The time consumption of Verify II is " + results.get(n)[5] + " ms. ");
 			System.out.println();
 		}
